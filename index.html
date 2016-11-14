@@ -350,7 +350,7 @@
     $(document).on('click','.i-am-attendin',function(){
         var msg = $.trim($('#guest-email').val());
         var name = $.trim($('#guest-name').val());
-        if(msg!="" || name!=""){
+        if(msg!="" && name!=""){
             $.ajax({
               dataType: 'jsonp',
               url: "http://getsimpleform.com/messages/ajax?form_api_token=f866fff55c50a425e14e2b4007fc2c73",
