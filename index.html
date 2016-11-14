@@ -254,23 +254,21 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<input type="name" class="form-control" id="guest-name" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<input type="email" class="form-control" id="guest-email" placeholder="Email/Mobile">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+							<button type="submit" class="btn btn-default btn-block i-am-attendin">I am Attending</button>
 						</div>
-					</form>
 				</div>
 			</div>
 		</div>
@@ -348,6 +346,28 @@
         day: d.getDate(),
         enableUtc: false
     });
+        
+    $(document).on('click','.i-am-attendin',function(){
+        var msg = $.trim($('#guest-email').val());
+        var name = $.trim($('#guest-name').val());
+        if(msg!="" || name!=""){
+            $.ajax({
+              dataType: 'jsonp',
+              url: "http://getsimpleform.com/messages/ajax?form_api_token=f866fff55c50a425e14e2b4007fc2c73",
+              data: {
+                name: name,
+                message: msg
+              }
+            }).done(function() {
+              //callback which can be used to show a thank you message
+              //and reset the form
+              alert("Thank you, I have received your message, will reply soon.");
+            });
+        }else{
+            alert("Please enter valid details and submit.");
+        }
+
+  });
 </script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
