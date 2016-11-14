@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+TZURL:http://tzurl.org/zoneinfo-outlook/Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20161114T091728Z
+UID:20161114T091728Z-75961907@marudot.com
+DTSTART;VALUE=DATE:20161204
+SUMMARY:Kiran Weds Swathi - Wedding
+URL:http%3A%2F%2Fkiranwedsswathi.in
+DESCRIPTION:Together with their families\n\nKiran Kumar Bali \nand\nSwathi G\n\nrequest the pleasure of your company at the celebration of their marriage\n\nRECEPTION: Starts at 7pm\, Sunday 4th of December 2016.\n\nMUHURTHAM: 01:41 AM\, 5th December 2016\n\nVENUE: Parinaya Function Hall\, Vizianagram\, Andhra Pradesh\n\nLocation on Google Maps: https://www.google.co.in/maps/place/18%C2%B006'14.0%22N+83%C2%B024'18.1%22E/@18.10389\,83.4028343\,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d18.10389!4d83.405023?hl=en\n\n\nLooking forward to meet you on 4th December!\nKiran
+LOCATION:Parinaya Function Hall\, Vizianagaram\, Andhra Pradesh\, India
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Kiran Weds Swathi - Wedding
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
