@@ -69,16 +69,16 @@
 							<p style="display:none;"><a href="./files/KiranWedsSwathi-Wedding.ics" target="_blank" class="btn btn-default btn-sm">Save the date</a></p>
                             <div title="Add to Calendar" class="addeventatc">
                                 Add to Calendar
-                                <span class="start">11/29/2016 09:00 AM</span>
-                                <span class="end">11/29/2016 11:00 AM</span>
+                                <span class="start">12/04/2016 07:00 PM</span>
+                                <span class="end">12/05/2016 03:30 AM</span>
                                 <span class="timezone">Asia/Kolkata</span>
-                                <span class="title">Summary of the event</span>
-                                <span class="description">Description of the event<br>Example of a new line</span>
-                                <span class="location">Location of the event</span>
-                                <span class="organizer">Organizer</span>
-                                <span class="organizer_email">Organizer e-mail</span>
-                                <span class="facebook_event">https://www.facebook.com/events/703782616363133</span>
-                                <span class="all_day_event">false</span>
+                                <span class="title">Kiran Weds Swathi - Wedding Invite!</span>
+                                <span class="description">Hello,<br><br> We Kiran Kumar Bali and Swathi G together with our families invite you to share the beginning of our new life together.<br><br>Reception starts at 7PM, 4th of December 2016. Main Cermony in the early hours of 5th December 2016 at 01:41AM.<br><br>Your presence is the best gift we can hope to receive.<br><br>Please visit http://KiranWedsSwathi.in to find more details. Thank you.</span>
+                                <span class="location">Parinaya Function Hall, Vizianagaram, Andhra Pradesh</span>
+                                <span class="organizer">Kiran Kumar Bali</span>
+                                <span class="organizer_email">kirankumarbali@gmail.com</span>
+                                <span class="facebook_event">http://KiranWedsSwathi.in</span>
+                                <span class="all_day_event">true</span>
                                 <span class="date_format">MM/DD/YYYY</span>
                                 <span class="client">abpRdlZDxzulzTCiMmeF23305</span>
                             </div>
@@ -384,6 +384,20 @@
         }
 
   });
+        window.addeventasync = function(){
+            addeventatc.settings({
+                license    : "abpRdlZDxzulzTCiMmeF23305",
+                mouse      : false,
+                css        : true,
+                outlook    : {show:true, text:"Outlook"},
+                google     : {show:true, text:"Google <em>(online)</em>"},
+                yahoo      : {show:true, text:"Yahoo <em>(online)</em>"},
+                outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+                appleical  : {show:true, text:"Apple Calendar"},
+                facebook   : {show:false, text:"Facebook Event"},
+                dropdown   : {order:"outlook,google,appleical"}
+            });
+        };
 </script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
