@@ -1860,13 +1860,13 @@ form label {
   opacity: 0;
 }
 
-#disqus_thread {
+.fb-comments {
      position: relative;
 }
-#disqus_thread:after {
+.fb-comments:after {
      content: "";
      display: block;
-     height: 55px;
+     height: 25px;
      width: 100%;
      position: absolute;
      bottom: 0;
