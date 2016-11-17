@@ -1873,5 +1873,13 @@ form label {
      background: white;
      z-index: 99999;
 }
+.fb-cont{
+    padding: 0px 30px;
+}
+@media only screen and (max-width: 450px) {
+    .fb-cont{
+        padding: 0px 5px;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */
