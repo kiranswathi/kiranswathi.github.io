@@ -1863,7 +1863,7 @@ form label {
 .fb-comments {
      position: relative;
 }
-.fb-comments:after {
+.fb-cont:after {
      content: "";
      display: block;
      height: 35px;
