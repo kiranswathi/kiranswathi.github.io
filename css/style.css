@@ -1879,6 +1879,7 @@ form label {
 @media only screen and (max-width: 450px) {
     .fb-cont{
         padding: 0px 5px;
+        min-height: 1000px;
     }
 }
 
